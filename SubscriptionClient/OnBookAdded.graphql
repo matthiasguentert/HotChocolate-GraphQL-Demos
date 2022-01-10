@@ -1,0 +1,8 @@
+﻿subscription onBookAdded {
+  onBookAdded {
+    title
+    author {
+      name
+    }
+  }
+}

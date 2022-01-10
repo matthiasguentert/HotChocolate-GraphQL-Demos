@@ -1,0 +1,26 @@
+﻿schema {
+  query: Query
+  subscription: Subscription
+}
+
+type Subscription {
+  onBookAdded: Book!
+  onBookModified: Book!
+  onBookDeleted: Book!
+}
+
+type Query {
+  books: [Book!]!
+}
+
+type Book {
+  bookId: Int!
+  title: String!
+  authorId: Int!
+  author: Author!
+}
+
+type Author {
+  authorId: Int!
+  name: String!
+}

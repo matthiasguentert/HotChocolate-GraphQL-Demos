@@ -1,0 +1,1 @@
+﻿Client subscriptions not working yet!
