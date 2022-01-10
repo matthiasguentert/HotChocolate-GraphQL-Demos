@@ -7,21 +7,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schema Stiching", "Schema S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic Server", "Basic Server", "{24AB4C48-BAC2-47B4-B78A-C0BF4286AE66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{16E29A82-AC69-4AA7-8AEB-583604FD5721}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{16E29A82-AC69-4AA7-8AEB-583604FD5721}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicServer", "BasicServer\BasicServer.csproj", "{181162E7-8FCB-4FCC-925F-428F4D8C60CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounts", "Accounts\Accounts.csproj", "{F680AC0F-C43E-41E0-94F9-8E846C10DAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounts", "Accounts\Accounts.csproj", "{F680AC0F-C43E-41E0-94F9-8E846C10DAA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products", "Products\Products.csproj", "{84AEC732-EE08-4720-88DD-870D0D8CC128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products", "Products\Products.csproj", "{84AEC732-EE08-4720-88DD-870D0D8CC128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory", "Inventory\Inventory.csproj", "{923CDC8D-1F48-4375-AFAE-C01AA5947FB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory", "Inventory\Inventory.csproj", "{923CDC8D-1F48-4375-AFAE-C01AA5947FB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reviews", "Reviews\Reviews.csproj", "{5D6B4FB7-1798-4046-AC7D-0CFE9EA447CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reviews", "Reviews\Reviews.csproj", "{5D6B4FB7-1798-4046-AC7D-0CFE9EA447CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchemaFirst", "SchemaFirst", "{F2584960-CF87-49B8-A7BD-723C479F51FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaFirstGraphQLServer", "SchemaFirstGraphQLServer\SchemaFirstGraphQLServer.csproj", "{C3DB2F1F-336B-4D0B-987B-D86F3F767439}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchemaFirstGraphQLServer", "SchemaFirstGraphQLServer\SchemaFirstGraphQLServer.csproj", "{C3DB2F1F-336B-4D0B-987B-D86F3F767439}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscriptions", "Subscriptions", "{EA5B85AA-D1C1-4B2C-9F15-07752C20BDF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionsServer", "SubscriptionsServer\SubscriptionsServer.csproj", "{CCB33FB1-4456-4C2B-B237-52333CF6D065}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,10 @@ Global
 		{C3DB2F1F-336B-4D0B-987B-D86F3F767439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3DB2F1F-336B-4D0B-987B-D86F3F767439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3DB2F1F-336B-4D0B-987B-D86F3F767439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB33FB1-4456-4C2B-B237-52333CF6D065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB33FB1-4456-4C2B-B237-52333CF6D065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB33FB1-4456-4C2B-B237-52333CF6D065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB33FB1-4456-4C2B-B237-52333CF6D065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +77,7 @@ Global
 		{923CDC8D-1F48-4375-AFAE-C01AA5947FB7} = {CA596461-3D67-4664-AD09-2B3CE383FC88}
 		{5D6B4FB7-1798-4046-AC7D-0CFE9EA447CA} = {CA596461-3D67-4664-AD09-2B3CE383FC88}
 		{C3DB2F1F-336B-4D0B-987B-D86F3F767439} = {F2584960-CF87-49B8-A7BD-723C479F51FF}
+		{CCB33FB1-4456-4C2B-B237-52333CF6D065} = {EA5B85AA-D1C1-4B2C-9F15-07752C20BDF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F79B4CE5-3CA6-41C2-B989-4BDB390062C9}
