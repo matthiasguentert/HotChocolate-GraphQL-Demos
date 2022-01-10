@@ -7,19 +7,19 @@ namespace SubscriptionsServer.Resolvers
         // A subscribing client can only listen to a single topic 
 
         [Subscribe]
-        public Book BookAdded([EventMessage] Book book)
+        public Book OnBookAdded([EventMessage] Book book)
         {
             return book;
         }
 
         [Subscribe]
-        public Book BookModified([EventMessage] Book book)
+        public Book OnBookModified([EventMessage] Book book)
         {
             return book;
         }
 
         [Subscribe]
-        public Book BookDeleted([EventMessage] Book book)
+        public Book OnBookDeleted([EventMessage] Book book)
         {
             return book;
         }

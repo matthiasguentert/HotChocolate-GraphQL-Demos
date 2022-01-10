@@ -48,7 +48,7 @@ namespace SubscriptionsServer.Controllers
             _context.SaveChanges();
 
             // Fire event
-            await _sender.SendAsync(nameof(Subscription.BookAdded), book);
+            await _sender.SendAsync(nameof(Subscription.OnBookAdded), book);
 
             return Ok(result.Entity);
         }
@@ -64,7 +64,7 @@ namespace SubscriptionsServer.Controllers
             bookFromDb.Author.Name = book.Author.Name;
             await _context.SaveChangesAsync();
 
-            await _sender.SendAsync(nameof(Subscription.BookModified), book);
+            await _sender.SendAsync(nameof(Subscription.OnBookModified), book);
 
             return Ok(bookFromDb);
         }
@@ -79,7 +79,7 @@ namespace SubscriptionsServer.Controllers
             var result = _context.Books.Remove(book);
             await _context.SaveChangesAsync();
 
-            await _sender.SendAsync(nameof(Subscription.BookDeleted), book);
+            await _sender.SendAsync(nameof(Subscription.OnBookDeleted), book);
 
             return Ok(result.Entity);
         }
